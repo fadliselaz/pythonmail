@@ -1,4 +1,4 @@
-#kali ini kita akan menggunakan cara kedua
+#kali ini kita akan menggunakan cara kedua yaitu menggunakan email.message dan SSL
 
 import smtplib
 from email.message import EmailMessage
