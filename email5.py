@@ -7,13 +7,16 @@ from email.message import EmailMessage
 us = "admin@artace.id"
 ps = "fadliselaz13"
 
-contact = ["fadliselaz@gmail.com", "bisri.h.kharisma@gmail.com",
-           "ask.artace@gmail.com", "rompasregi5@gmail.com"]
+# contact = ["fadliselaz@gmail.com", "bisri.h.kharisma@gmail.com",
+#            "ask.artace@gmail.com", "rompasregi5@gmail.com"]
+
+contact = input("masukan email : ")
 
 msg = EmailMessage()
 msg["Subject"] = "Penawaran Harga"
 msg["From"] = "admin@artace.id"
-msg["To"] = ", ".join(contact)
+# msg["To"] = ", ".join(contact)
+msg["To"] = contact
 msg.set_content(
     "Dengan ini kami berikan penawaran harga\n pembuatan website..")
 
